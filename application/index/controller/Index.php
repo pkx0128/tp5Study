@@ -5,23 +5,12 @@ class Index
 {
     public function index()
     {
-        // // 加载任意位置的php文件类型的配置文件
-        // \think\Config::load(APP_PATH.'../config/config.php');
-        // // // 加载任意位置的xml文件类型的配置文件 
-        // // \think\Config::parse(APP_PATH.'../config/config.xml','xml');
-        //  // 加载任意位置的ini文件类型的配置文件 
-        //  \think\Config::parse(APP_PATH.'../config/config.ini','ini');       
-        // return dump(\think\Config::has('console.name'));
-        // return dump(config('?console.name'));
-
-        $conf = "app_debug";
-        $isExist = Config::has('app_debug');
-        if($isExist)
-        {
-            dump(Config::get($conf));
-        }else{
-            return $conf."配置项不存在";
-        }
-
+        // 逐个添加配置项
+        Config::set("person","pankx");
+        // 批量添加配置项
+        Config::set(["person"=>"pankx","age"=>29,"salar"=>2000]);
+        // 添加二级配置项
+        Config::set("car",["bmw"=>100000,"BYD"=>30000]);
+        return dump(Config::get());
     }
 }
