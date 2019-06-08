@@ -12,7 +12,7 @@ class Index
         //  // 加载任意位置的ini文件类型的配置文件 
         //  \think\Config::parse(APP_PATH.'../config/config.ini','ini');       
         // return dump(\think\Config::get());
-        return dump(config());
+        return dump(config('console.name'));
 
     }
 }
