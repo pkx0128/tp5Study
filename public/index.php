@@ -14,7 +14,7 @@
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
 // 定义配置目录
-define('CONF_PATH',__DIR__.'/../config/');
+// define('CONF_PATH',__DIR__.'/../config/');
 // 定义ini配置文件类型
 // define('CONF_EXT','.ini');
 // 定义xml配置文件类型

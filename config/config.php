@@ -1,7 +1,7 @@
 <?php
-// 配置场景
+// 加载任意位置的php文件类型的配置文件
     return[
-            "app_status"=>"Home"
+            "message"=>"加载任意位置的php文件类型的配置文件"
     ];
 
 
