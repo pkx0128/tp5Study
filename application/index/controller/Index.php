@@ -1,6 +1,6 @@
 <?php
 namespace app\index\controller;
-
+use think\Config;
 class Index
 {
     public function index()
@@ -12,7 +12,16 @@ class Index
         //  // 加载任意位置的ini文件类型的配置文件 
         //  \think\Config::parse(APP_PATH.'../config/config.ini','ini');       
         // return dump(\think\Config::has('console.name'));
-        return dump(config('?console.name'));
+        // return dump(config('?console.name'));
+
+        $conf = "app_debug";
+        $isExist = Config::has('app_debug');
+        if($isExist)
+        {
+            dump(Config::get($conf));
+        }else{
+            return $conf."配置项不存在";
+        }
 
     }
 }
