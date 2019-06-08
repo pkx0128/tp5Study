@@ -20,6 +20,6 @@ define('CONF_PATH',__DIR__.'/../config/');
 // 定义xml配置文件类型
 // define('CONF_EXT','.xml');
 // 定义json配置文件类型
-define('CONF_EXT','.json');
+// define('CONF_EXT','.json');
 // 加载框架引导文件
 require __DIR__ . '/../thinkphp/start.php';

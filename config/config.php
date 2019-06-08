@@ -1,11 +1,8 @@
 <?php
-// 默认方式设置配置项
+// 配置场景
     return[
-        'app_debug'=>true,
-        'myinfo'=>[
-            'message'=>'默认方式设置配置项',
-            'message2'=>'支持二级配置'
-        ],
-];
+            "app_status"=>"Home"
+    ];
+
 
 ?>
