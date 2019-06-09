@@ -1,10 +1,13 @@
 <?php
     namespace app\index\controller;
-    class Index
+
+use think\Config;
+
+class Index
     {
         public function index()
         {
-            return "Hello TP5";
+            return dump(Config::get());
         }
     }
 
