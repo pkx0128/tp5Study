@@ -1,9 +1,0 @@
-{
-    "name":"pankx",
-    "message":"Json文件配置系统配置",
-    "myJob":{
-        "lang":"php",
-        "age":2
-
-    }
-}
